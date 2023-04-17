@@ -1,0 +1,242 @@
+/* SET-UP */
+*{
+    font-family: var(--fp);
+}
+
+body{
+    background-color: var(--wh);
+}
+:root{
+    --dr: darkred;
+    --lr: #C67F7F;
+    --wh: #ececec;
+    --bl: #000000;
+    --ft: 'Nova Square', cursive;
+    --fp: 'Rajdhani', sans-serif;
+
+}
+
+.txt-dr{
+    color: var(--dr);
+}
+.txt-black{
+    color: var(--bl);
+}
+.txt-wh{
+    color: var(--wh);
+}
+.bg-white{
+    background-color: white;
+}
+.bg-red{
+    background-color: var(--dr);
+}
+
+h1,h2 .h1, .h2{
+    font-family: var(--ft);
+}
+
+.logo{
+    width: 25%;
+}
+/* NAVBAR 1 NO CSS */
+
+/* NAVBAR 2 */
+.mt-custom{
+    margin-top: 90px;
+}
+.mt-custom1{
+    margin-top: 141px;
+}
+
+.nav-link{
+    color: var(--bl);
+}
+
+@media screen and (max-width:576px) {
+    .mt-custom{
+        margin-top:69px;
+    }
+}
+
+/* HEADER */
+.bg1{
+    height: 100vh;
+    background-image:linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.068)) , url(./media/switzerland-862870_1920.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media screen and (max-width:576px) {
+    .bg1{
+        height: 80vh;
+        margin-top: -16px;
+    }
+}
+
+.titolo{
+    letter-spacing: 40px;
+}
+
+/* BG HEADER 2 */
+.pos-mount{
+    position: absolute;
+    bottom: -30px;
+    padding-left: 0px;
+}
+
+@media screen and (max-width:576px) {
+    .pos-mount{
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+.quotes{
+    position: relative;
+}
+.quotes::before{
+    content: open-quote;
+    color: var(--dr);
+    font-weight: 700;
+    font-size: 300%;
+    position: absolute;
+    top: -25px;
+    left: -10px;
+
+}
+
+.quotes::after{
+    content: close-quote;
+    color: var(--dr);
+    font-weight: 700;
+    font-size: 300%;
+    position: absolute;
+}
+
+/* 4 cards */
+
+.mt-custom2{
+    margin-top: 250px;
+}
+.riga-custom{
+    width: 75%;
+    height: 4px;
+    background-color: var(--dr);
+    position: relative;
+}
+
+.riga-custom::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--wh);
+    border: 2px solid var(--dr);
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+/* sezione sinistra e destra */
+.fw-600{
+    font-weight: 600;
+}
+
+/* sezione alberi e bottone */
+.bg-tree{
+    /* media query height 45vh */
+    height: 80vh;  
+    background-image: url(./media/trees2.png);
+    background-position:start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-custom{
+    margin-top: 250px;
+    color: var(--wh);
+    background-color: var(--dr);
+    border: none;
+    padding: 15px 40px;
+}
+
+/* timeline */
+.timeline{
+    border-left: 4px solid var(--dr);
+    height: 50vh;
+}
+
+@media screen and (max-width:576px){
+    .timeline{
+        height: 111vh;
+    }
+}
+
+.h-tree{
+    margin-top: 199px;
+    height: 70%;
+}
+.mb-custom{
+    margin-bottom:0px;
+}
+
+.pallino{
+    position: relative;
+}
+
+.pallino::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid var(--dr);
+    position: absolute;
+    left: -10px;
+    top: 0px ;
+}
+
+/* our team */
+
+.ms-team{
+    margin-left: -50px;
+}
+.foto-circle{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid var(--dr);
+}
+
+@media screen and (max-width:576px){
+    .ms-team{
+        margin-left: 0px;
+    }
+}
+
+/* our benefits */
+
+.img-benefits{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid var(--dr);
+}
+
+/* footer */
+.bg-footer{
+    height: 80vh;
+}
+.w-img-foot{
+    width: 100%;
+}
+
+.link-wh{
+    color: var(--wh);
+}
